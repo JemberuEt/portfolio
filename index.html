@@ -1,0 +1,557 @@
+<!DOCTTYPE html>
+<html>
+  <head>
+    <title></title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+  body{
+  margin: 0px;
+padding: 0px;  
+font-family: sans-serif;
+  }
+
+
+      .header{
+        padding:5px 15px;
+        position:fixed;
+        top:0;
+        display:flex;
+        font-family:Arial;
+        justify-content:space-between;
+        align-items:center;
+        overflow:hidden;
+       background:#f1f1f9; 
+     border-bottom:2px solid #4d4d4d;
+  
+     width:100%;
+     
+    
+      }
+      .header h3{
+        margin:0px;
+      
+       color: #277eab;
+      }
+
+ .header ul {
+    display:flex;
+    list-style:none;
+    margin:0px;
+            }
+          .header ul  li{
+            padding:10px 30px;
+          }
+  
+    .menu a{
+margin:0px;
+      color:#403f3f;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      position: relative;
+      transition: 0.3s linear;
+    }
+    .menu a::before{
+      position: absolute;
+      content: "";
+      height:3.5px;
+      width:0;
+      transition:  0.3s linear;
+      border-radius: 10px;
+      background-color: #277eab;
+      bottom: -4px;
+     
+    }
+    .menu a:hover::before, .menu a:hover{
+width:100%;
+color: #277eab;
+    }
+    h3{
+      text-align:center;
+    }
+    ul{
+      list-style:none;
+    }
+    
+    .cv-container{
+        margin: 15px;
+      color:#403f3f;
+      font-size:18px;
+    font-weight: 600;
+    line-height: 1.8;
+    align-items: center;
+      display: flex;
+    
+    }
+    .cv-left p{
+      width:380px;
+    
+  margin-left: 30px;
+      color:#403f3f;
+      font-size: 20spx;
+    font-weight: 600;
+    line-height: 1.8;
+    }
+
+    .cv-container img{
+      width:440px;
+      height: 400px;
+
+
+      padding:30px 30px;
+    }
+
+    .btn-download{
+      background:#fff;
+      text-decoration: none;
+      padding: 5px;
+      margin-left:70px;
+      border-radius:5px;
+      border:2px solid #277eab;;
+      color:#277eab;
+      font-size: 18px;
+      transition: 0.15s;
+    }
+        .btn-download:hover{
+      color:#fff;
+      text-decoration: none;
+      padding: 5px;
+      border-radius:5px;
+      border:2px solid #277eab;
+      background-color: #277eab;
+      font-size: 18px;
+    }
+    .skill-items{
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:round;
+    }
+    .profil-and-social-media {
+      display:flex;
+      align-items:center;
+  
+    }
+    .skill-items li img{
+      padding-left:10px;
+      width:400px;
+      height:150px;
+    }
+  
+    .social-media img{
+     padding:10px;
+      width:50px;
+    height:40px;
+    }
+    .about-us{
+     margin: 15px;
+    color:#403f3f;
+    font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
+  }
+    .container-about {
+      display:flex;
+      flex-wrap:wrap;
+  align-items: center;
+      justify-content:space-between;
+    }
+    .container-about img{
+    width:400px;
+    height:380px;
+    margin-left:40px; 
+     border-radius: 10px;  
+    }
+    .text-of-about{
+      width:50%;
+    
+    }
+
+   
+.portfolio .container{
+background-color:#f9f9f9;
+
+width: 100%;
+ display:flex;
+ flex-wrap:wrap;
+ 
+ justify-content: space-around;
+}
+
+.portfolio .container .portfo-items
+{
+  margin:20px;
+  box-shadow: 1px 2px 2px 2px  hsl(0, 10%, 81%);
+  padding:6px;
+  width:430px;
+  border-radius: 7px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.portfo-items:hover{
+
+opacity:0.7;
+
+}
+.portfolio .container img{
+  width:430px;
+  height:350px;
+
+
+box-shadow: -1px 2px 2px hsl(0, 3%, 65%);
+}
+
+.portfolio .container .portfo-icon img{
+  
+    margin:0px;
+margin:5px;
+width:25px;
+  height:25px;
+  border-radius:50%;
+       border: 1px solid #277eab;
+
+}
+.text-portfolio{
+  text-align:center;
+}
+
+.portfolio .container p{
+width:250px;
+line-height:1.8;
+font-size: 17px;
+font-weight: 600;
+color:#403f3f;
+}
+.portfo-icon,.portfo-icon div a{
+display:flex; 
+text-decoration: none;
+padding:5px 10px; 
+align-items:center;
+color: #277eab;
+justify-content:center;
+}
+
+
+
+    .contact ul{
+      display:flex;
+      justify-content:center;
+          font-size: 14;
+      margin: 15px;
+  
+    }
+    .contact ul li{
+      margin:0px 50px;
+    }
+
+
+
+    .contact ul  li p{
+       
+      display:flex;
+margin: 0px;
+
+      align-items:center;
+    }
+    .contact ul li p img{
+      width:25px;
+      height:25px; 
+      
+        margin-right:5px;
+      border-radius:50%;
+      box-shadow:1px 2px 2px #c2c2c2;
+      
+      padding:2px;
+    }
+    .footer{
+          text-align:center;
+      background:#1a1a1a;
+      color:#fff;
+      margin:0px;
+      padding:5px;
+      width:100%;
+    
+    }
+    @media screen and (max-width:768px){
+      
+              .header .menu{
+              position:fixed;
+                display:block;
+             background:#f1f1f9;
+                width:100%;
+             transition:0.8s;
+                       height:0;
+                       top:45;
+                       text-align:center;
+                     
+                       padding:0;
+                    overflow:hidden;
+                       left:0;
+                          }
+      
+      
+           .bar1, .bar2, .bar3 {
+    width:25px;
+    height: 3px;
+    background-color: #277eab;
+    margin: 6px 30;
+    transition: 0.4s;
+}   
+      
+    /* This is to rotate first bar */ 
+
+.change .bar1 {
+ -webkit-transform: rotate(-45deg)
+ translate(-9px, 6px) ;
+ transform: rotate(-45deg)
+ translate(-5px, 3px) ;
+}
+
+
+/* This is to fade out second bar */ 
+
+.change .bar2 {opacity: 0;}
+
+
+/* This is to rotate last bar */ 
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg)
+  translate(-8px, -8px) ;
+  transform: rotate(45deg)
+  translate(-8px, -8px) ;
+}
+        .header .show{
+                 color:red;
+              height:200;
+                  }              
+        
+          
+      
+      
+  
+          .profil-and-social-media {
+      display:flex;
+  flex-direction: column;
+    }
+        .cv-container{
+    align-items: center;
+margin:40px 0px;
+      display: flex;
+      flex-direction: column;
+        }
+     .cv-left{
+       
+      font-size: 12px;
+      width: 250px;
+    
+    }
+    .cv-container img{
+      width:250px;
+      height: 250px;
+
+
+      
+    }
+ 
+        
+        .social-media{
+              display:flex;
+      
+      margin: 20px;  
+        }
+    .social-media img{
+    padding:5px 15px;
+    
+      width:30px;
+      height: 30px;
+    }
+    
+    .container-about img{
+    width:290px;
+    height:250px;
+    border-radius:5px;  
+    }
+    
+    .text-of-about,  .container-about{
+      width:100%;
+
+    }
+
+
+.portfolio .container img{
+  width:250px;
+  height:250px;
+ 
+margin:0;
+
+box-shadow: -1px 2px 2px hsl(0, 3%, 65%);
+}
+.portfolio .container{
+  width:100%;
+  
+}
+ .container .portfo-items
+ {
+   width:250px;
+   padding: 0px;
+   margin: 0px;
+ }
+
+      .contact ul{
+
+      display:flex;
+      flex-direction: column;
+    }   
+    .skill-items li img{
+      margin: 0px;
+      width:250px;
+  
+    }
+
+
+
+.footer{
+          text-align:center;
+      background:#1a1a1a;
+      color:#fff;
+      margin:0px;
+      padding:3px;
+      
+      width:98%;
+    
+    }
+
+
+    }
+ 
+
+
+  </style>  
+  </head>
+  <body>
+<div class="header">
+  <h3>Jemberu</h3>
+
+        <div class="menu-icon">
+
+<div class="container"
+onclick="myFunction(this)">
+
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+
+</div>
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li>
+      <a href="#skills">Project</a>  
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>  
+  <div class="cv-container" id="home">
+    <div class="cv-left">
+      <h3>Full Stack Web Developer</h3>
+<p>
+  Hi, I am Jemberu Elias, a Full Stack Web Developer. I am an enthusiastic developer with a strong set of technical as well as non-technical skills, and a dedication towards creating useful and interactive web applications.
+</p>
+<a class="btn-download" href="Jemberu.pdf" download">Download CV</a>
+</div>
+<div class="profil-and-social-media">
+  
+  <div><img src="image/image.png">
+</div>
+
+  <ul class="social-media">
+    <li><a href="https://www.facebook.com/jeb.elias.1">
+    <img src="image/Facebook.png">
+  </a>  </li>
+   <li><a href="https://twitter.com/jeb_eli93546"><img src="image/tweet.png"></a></li> 
+   <li><a href="https://github.com/JemberuEt"><img src="image/GitHub.png"></a></li>
+  </ul>
+  
+</div>
+
+  </div>  
+  <div class="about-us" id="about">
+    <h3>About Me</h3>
+    <div class="container-about"><img src="image/computer.jpg">
+<div class="text-of-about"><p> I'm Jemberu Elias, a computer science graduate from Wachemo University.</p>
+  <p>Throughout my studies, I've developed a strong foundation in programming, web development, and database management.</p>
+  <p> I'm passionate about staying up-to-date with the latest technologies, including AI and machine learning.</p>
+  <p> I thrive in collaborative environments and enjoy tackling complex problems.<p> Explore my portfolio to see examples of my work and let's connect to discuss potential collaborations.</p>
+</div></div></div>
+  <div id="skills">
+  <h3>Skills</h3>  
+  <ul class="skill-items">
+            <li>
+    <img src="image/basic.jpg"> 
+    </li>
+     <li>
+    <img src="image/frame.jpg"> 
+    </li> 
+    <li>
+    <img src="image/language.jpg"> 
+    </li>
+    <li>
+    
+  </ul>
+    
+  </div>
+  <div class="portfolio" id="porject">
+    <h3>Portfolio</h3>
+    <div class="container">
+      <div class="portfo-items">
+      <img src="image/exam.png">
+      <div class="text-portfolio">
+      <h4>Exit Exam Resource</h4>
+      <p>
+        A Exit Exam Resource website is an online platform that offers two main features: the ability to take exams and access educational resources for download. It provides users with a convenient and efficient way to assess their knowledge and acquire learning materials.</p>
+      </div>
+      <div class="portfo-icon">
+     <div><a href="https://github.com/JemberuEt"> <span>Code</span> <img src="image/GitHub.png"></a></div>
+   <div> <a href="https://jemberuet.github.io/EExam/"><span>Live Demo</span> <img src="image/live.png"></a></div>
+      </div>   </div>
+     
+          
+  
+  
+
+</div>
+</div>
+  <div class="contact" id="contact">
+    <h3>Contact</h3>
+    <ul>
+    <li><h4>Location</h4>
+    <p><img src="image/location.webp">Ethiopia, Addis Ababa</p>
+    </li>
+    <li><h4>Mail</h4>
+    <p><img src="image/email.png"><span> elijeb9@gmail.com   </span></p>
+    </li>
+  </div>
+  <div class="footer"><p>Copyright &#169; 2024. All rights are reserved</p></div>
+      <script>
+
+function myFunction(x) {
+  var m=document.getElementsByClassName("menu")[0];
+      m.classList.toggle("show");
+    x.classList.toggle("change");
+    
+}
+
+</script> 
+  </body>
+</html>
